@@ -8,6 +8,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    background-color: rgb(245, 235, 235);
 }
 
 h1,
@@ -92,6 +93,14 @@ nav {
     display: flex;
 
 }
+.card {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    color: #fff;
+    width: 100%;
+    height: inherit;
+
+}
 
 .texto-branco {
     color: #fff;
@@ -119,6 +128,13 @@ section {
     width: 100%;
     max-width: 350px;
     margin-right: 30px;
+}
+
+.legenda {
+    margin-top: -1%;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #5e615e;
+    font-size: 0.8rem;
 }
 
 .coluna-1,
