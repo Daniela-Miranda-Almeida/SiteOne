@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,500;1,300&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+} 
+
+nav {
+    background-color: black;
+    padding: 25px;
+    margin-top: initial;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(172, 164, 164, 0.1);
+}
+
+.navbar {
+    padding: .4rem 0.1rem;
+    width: 96%;
+}
+
+.navbar li.menu-toggle {
+    display: none;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.menu-toggle button {
+    color: rgba(133, 122, 122);
+    background-color: rgba(15, 15, 15);
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0px 15px;
+    height: 35px;
+    width: 40px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.navbar li.logo-menu {
+    float: left;
+    margin-top: -16px;
+    height: 44px;
+
+}
+
+.navbar li.logo-menu img {
+    width: 150px;
+}
+
+.navbar ul {
+    margin: -3px;
+    list-style-type: none;
+    text-align: right;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.navbar li.link-menu a {
+    text-decoration: none;
+    font-weight: 540;
+    font-size: 12pt;
+    color: #fff;
+}
+
+.jumbotron {
+    background-color: black;
+    padding-top: 13%;
+    width: 100%;
+    height: inherit;
+    display: flex;
+
+}
+
+.texto-branco {
+    color: #fff;
+}
+
+.img-tam {
+    height: 500px;
+    float: right;
+}
+
+.container {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+section {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 30px;
+}
+
+.coluna-1,
+.coluna-2,
+.coluna-3,
+.coluna-4,
+.coluna-5,
+.coluna-6,
+.coluna-7,
+.coluna-8,
+.coluna-9,
+.coluna-10 {
+   padding: 1px;
+} 
+
+.coluna-1 {
+    width: 10%;
+}
+.coluna-2 {
+    width: 15%;
+}
+.coluna-3 {
+    width: 30%;
+}
+
+.coluna-4 {
+    width: 40%;
+}
+.coluna-5 {
+    width: 50%;
+}
+
+.coluna-6 {
+    width: 60%;
+}
+.coluna-7 {
+    width: 70%;
+}
+
+.coluna-8 {
+    width: 80%;
+}
+.coluna-9 {
+    width: 90%;
+}
+
+.coluna-10 {
+    width: 100%;
+}
+
+.btn {
+    border: none;
+    background-color: #fff;
+    color: black;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    font-size: 0.9rem;
+    box-shadow: 0 0 10px rgba(172, 164, 164, 0.1);
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.central {
+    text-align: center;
+}
+
+ul.lista li span {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+ul.lista li:hover {
+    font-size: 1.1rem;
+}
+
+.img-style {
+    box-shadow: 0 0 10px rgba(172, 164, 164, 0.1);
+}
+
+
+ul.lista {
+    list-style-type: none;
+    padding: 5px;
+}
+
+ul.lista li::before  {
+    content: '★';
+    margin-right: 5px;
+    color: #d8cc27;
+}
+
+ul.lista li:hover::before {
+    color: #830f0f;
+}
+
+
+@media (max-width: 559px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .jumbotron {
+        padding-top: 18%;
+    }
+
+    .coluna-1,
+    .coluna-2,
+    .coluna-3,
+    .coluna-4,
+    .coluna-5,
+    .coluna-6,
+    .coluna-7,
+    .coluna-8 
+    .coluna-9 {
+        width: 100%;
+    }
+
+    .img-tam {
+        height: 450px;
+        float: right;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .navbar li.menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav .link-menu {
+        background-color: black;
+        padding: 5px;
+        margin-top: 10px;
+        width: calc(100% - 10px);
+        text-align: left;
+    }
+
+    nav .menu-toggle {
+        display: block;
+    }
+
+    nav .hidden {
+        display: none;
+    }
+}
