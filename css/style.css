@@ -11,6 +11,10 @@ body {
     background-color: rgb(245, 235, 235);
 }
 
+.mt-5 {
+    margin-top: 5%;
+}
+
 h1,
 h2,
 h3,
@@ -21,12 +25,18 @@ h6 {
 } 
 
 nav {
-    background-color: black;
+  
     padding: 25px;
     margin-top: initial;
-    position: fixed;
     width: 100%;
     box-shadow: 0 0 10px rgba(172, 164, 164, 0.1);
+    position: fixed;
+}
+
+.black {
+    background-color: black;
+ 
+
 }
 
 .navbar {

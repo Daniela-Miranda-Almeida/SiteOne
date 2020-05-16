@@ -3,51 +3,57 @@
         text-align: center;
         font-size: 15px;
     }
-    .mensagem  span{
-    display:inline-block;
-    padding:5px;
-    text-align: center;
-    color:#e5e5e5;
-    background-color: rgb(27, 23, 23);
-    border-radius: 20px;
-    opacity:0;
-    filter:alpha(opacity=0);
-    position: relative;
+
+    .mensagem span {
+        display: inline-block;
+        padding: 5px;
+        text-align: center;
+        color: #e5e5e5;
+        background-color: rgb(27, 23, 23);
+        border-radius: 20px;
+        opacity: 0;
+        filter: alpha(opacity=0);
+        position: relative;
+        margin-bottom: 10%;
     }
 
 
-.triangulo:before {
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-top: 14px solid  rgb(27, 23, 23);
-    content: '';
-    left: 50%;
-    margin-top: 25px;
-    position: absolute;
-   
-    
-}
-    .mensagem:hover span{
-    border: 1px solid f00;
-    opacity:1;
-    -moz-opacity:1;
-    filter:alpha(opacity=100);
+    .triangulo:before {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 14px solid rgb(27, 23, 23);
+        content: '';
+        left: 50%;
+        margin-top: 25px;
+        position: absolute;
     }
 
-    .horizontal,.diagonal, .vertical {
+
+    .mensagem:hover span {
+        border: 1px solid f00;
+        opacity: 1;
+        -moz-opacity: 1;
+        filter: alpha(opacity=100);
+    }
+
+    .horizontal,
+    .diagonal,
+    .vertical {
         padding-top: 10%;
     }
-    
-    .horizontal.inner {
-        background: linear-gradient(to bottom,  #00f 0%, #00f 50%, #f00 51%, #f00 100%);
+
+    .diagonal.inner:hover {
+        background: linear-gradient(135deg, rgb(19, 17, 122) 0%, rgb(1, 69, 146)48%, rgb(8, 112, 197) 51%, rgb(3, 86, 168) 100%);
     }
-    
+
+    .horizontal.inner {
+        background: linear-gradient(to bottom,rgb(47, 140, 226) 0%,rgb(50, 162, 236) 70%, rgb(47, 0, 255) 95%, rgb(17, 41, 129) 100%);
+    }
+
     .vertical.inner {
         background: linear-gradient(to right, #00f 0%, #00f 50%, #f00 51%, #f00 100%);
     }
-    
+
     .diagonal.inner {
-        background: linear-gradient(135deg, rgb(8, 112, 197) 0%, rgb(3, 86, 168) 48%, rgb(146, 13, 1) 51%, rgb(129, 52, 52) 100%);
+        background: linear-gradient(135deg, rgb(8, 112, 197) 0%, rgb(3, 86, 168) 48%, rgb(1, 69, 146) 51%, rgb(19, 17, 122) 100%);
     }
-    
-   
