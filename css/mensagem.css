@@ -57,3 +57,10 @@
     .diagonal.inner {
         background: linear-gradient(135deg, rgb(8, 112, 197) 0%, rgb(3, 86, 168) 48%, rgb(1, 69, 146) 51%, rgb(19, 17, 122) 100%);
     }
+
+
+    .gira {
+        -webkit-transform: rotate(-7deg);
+        -ms-transform: rotate(-7deg);
+        transform: rotate(-7deg);
+    }
