@@ -39,10 +39,10 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="coluna-5 central">
-                    <img src="img/sunny.png" class="gira" alt="sunny">
+                    <img src="img/sunny5.png" class="gira" alt="sunny">
                 </div>
                 <div class="coluna-5 central">
-                    <img src="img/merry.png"  alt="merry">
+                    <img src="img/merry.png" alt="merry">
                 </div>
             </div>
         </div>
@@ -69,6 +69,120 @@
         </div>
     </div>
 
+    <script>
+        num_selecao = 2;
+        function ImagemAnterior() {
+            num_selecao--;
+            if (num_selecao == 1) {
+                num_ant = 10;
+                num_prox = 2;
+            }
+            else if (num_selecao < 1) {
+                num_selecao = 10;
+                num_ant = 9;
+                num_prox = 1;
+            }
+            else {
+                num_ant = num_selecao - 1;
+                num_prox = num_selecao + 1;
+            }
+
+            img_destaque.src = "img/recompensa/" + num_selecao + ".jpg";
+            img_ant.src = "img/recompensa/" + num_ant + ".jpg";
+            img_prox.src = "img/recompensa/" + num_prox + ".jpg";
+
+        }
+
+        function ImagemProxima() {
+            num_selecao++;
+            if (num_selecao == 10) {
+                num_ant = 9;
+                num_prox = 1;
+            }
+            else if (num_selecao > 10) {
+                num_selecao = 1;
+                num_ant = 10;
+                num_prox = 2;
+            }
+          
+            else {
+                num_ant = num_selecao - 1;
+                num_prox = num_selecao + 1;
+            }
+
+            img_destaque.src = "img/recompensa/" + num_selecao + ".jpg";
+            img_ant.src = "img/recompensa/" + num_ant + ".jpg";
+            img_prox.src = "img/recompensa/" + num_prox + ".jpg";
+        }
+
+
+    </script>
+
+    <style>
+        .itens {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+            width: 100%;
+        }
+
+        .itens img {
+            width: 100%;
+        }
+
+        .item_peq {
+            width: 10%;
+            cursor: pointer;
+
+        }
+
+        .item_dest {
+            width: 32%;
+        }
+
+        button.btn-mudar {
+            border: none;
+            background-color: #0c0b0c;
+            color: #f2f2f2;
+            border-radius: 30px;
+            width: 15%;
+            font-family: 'Roboto', Arial, Helvetica, sans-serif;
+            box-shadow: 0 0 10px #aaa0aa;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .mt-2 {
+            margin-top: 2%;
+        }
+    </style>
+
+    <div class="container central">
+        <div class="itens">
+            <div class="item_peq">
+                <img id="img_ant" src="Img/recompensa/1.jpg" alt="anterior" onclick="ImagemAnterior()" />
+
+            </div>
+
+
+            <div class="item_dest">
+
+                <img id="img_destaque" src="Img/recompensa/2.jpg" alt="Imagem Selecionada" />
+
+            </div>
+
+            <div class="item_peq">
+                <img id="img_prox" src="Img/recompensa/3.jpg" alt="proximo" onclick="ImagemProxima()" />
+
+            </div>
+
+
+        </div>
+        <button class="btn-mudar mt-2" type="reset" onclick="location.reload()" value="Limpar">Refazer</button><br>
+        <br><br>
+
+    </div>
 
     <script src="js/navbar.js"></script>
 
